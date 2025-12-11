@@ -5,7 +5,7 @@ on:
     - cron: "0 * * * *"   # Hourly
   workflow_dispatch:        # For manuel run
 
-jobs:
+jobs: 
   scrape:
     runs-on: ubuntu-latest
 
