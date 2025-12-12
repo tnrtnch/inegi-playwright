@@ -2,8 +2,8 @@ name: Run RELPS Scraper Daily
 
 on:
   schedule:
-    - cron: "0 3 * * *"   # Daily at 03:00 UTC
-  workflow_dispatch:      # For manuel run
+    - cron: "0 3 * * *" # Daily at 03:00 UTC
+  workflow_dispatch:    # For manuel run
   push:
     branches:
       - main
@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write     
+      contents: write
 
     steps:
       - name: Checkout repo
@@ -32,7 +32,11 @@ jobs:
 
       - name: Run scraper
         run: |
-          python scraper.py     
+          python scraper.py  
+
+      - name: Update timestamp to force change
+        run: |
+          echo "Last update: $(date '+%Y-%m-%d %H:%M:%S')" >> relps_final.json
 
       - name: Force commit and push
         run: |
