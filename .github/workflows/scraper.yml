@@ -1,39 +1,43 @@
-name: RELPS Scraper
+name: Run RELPS Scraper Daily
 
 on:
   schedule:
-    - cron: "0 * * * *"   # Hourly
-  workflow_dispatch:        # For manuel run
+    - cron: "0 3 * * *"   # Daily at 03:00 UTC
+  workflow_dispatch:      # For manuel run
+  push:
+    branches:
+      - main
 
-jobs: 
+jobs:
   scrape:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write     
+
     steps:
-      - name: Take the repo
-        uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - name: Python install
-        uses: actions/setup-python@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
+          python-version: "3.12"
 
-      - name: Requirements install
+      - name: Install dependencies
         run: |
-          pip install -r requirements.txt
-          playwright install --with-deps chromium
+          python -m pip install --upgrade pip
+          pip install playwright
+          playwright install
 
       - name: Run scraper
-        run: python scraper.py
-
-      - name: Commit the output to the repository.
         run: |
-          git config user.email "github-actions@github.com"
-          git config user.name "GitHub Actions"
-          git add relps_final.json
-          git commit -m "Auto-update $(date)" || echo "Nothing to commit"
+          python scraper.py     
 
-      - name: Push to GitHub
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Force commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add relps_final.json
+          git commit -m "Auto update $(date '+%Y-%m-%d %H:%M:%S')" || true
+          git push
