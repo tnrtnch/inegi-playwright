@@ -19,6 +19,7 @@ Chromium (headless)<br />
 GitHub Actions (CI automation)<br />
 
 
+## Project Structure
 .<br />
 ├── scraper.py          # Main Playwright scraper<br />
 ├── relps_final.json    # Output file (auto-updated)<br />
@@ -61,6 +62,7 @@ More stable for ASP.NET + iframe-heavy websites<br />
 Easier debugging<br />
 Fewer race conditions<br />
 Works reliably in CI environments<br />
+
 
 
 
