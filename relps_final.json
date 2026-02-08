@@ -604,17 +604,26 @@
         ]
     },
     {
-        "proveedor": "SICARU LIMPIEZA, S.A. DE C.V.",
+        "proveedor": "PRODUCCIONES CONTI, S.A. DE C.V.",
         "numero": [
-            "INEGI.OIC5.03/2/2023",
-            "INEGI.OIC5.03/2/2023"
+            "40.902.05/06/2011",
+            "40.902.05/06/2011"
         ]
     },
     {
-        "proveedor": "SUSST DHALCO, S.A. DE C.V.",
+        "proveedor": "PRODUCCIONES CONTI, S.A. DE C.V.",
         "numero": [
-            "INEGI.OIC5.03/13/2024",
-            "INEGI.OIC5.03/13/2024"
+            "40.902.05/06/2011",
+            "40.902.05/06/2011"
+        ]
+    },
+    {
+        "proveedor": "SUPER TAZ, S.A. DE C.V.",
+        "numero": [
+            "INEGI.CIN3.05/2/2016",
+            "INEGI.CIN3.05/2/2016",
+            "INEGI.CIN3.05/2/2017",
+            "INEGI.CIN3.05/2/2017"
         ]
     }
-]Last update: 2026-02-07 04:25:46
+]Last update: 2026-02-08 04:58:37
