@@ -590,10 +590,17 @@
         ]
     },
     {
-        "proveedor": "PLÁSTICOS Y FERTILIZANTES DE MORELOS, S.A. DE C.V.",
+        "proveedor": "SISTEMAS ELECTRÓNICOS Y DE RADIOCOMUNICACIÓN, S.A. DE C.V.",
         "numero": [
-            "INEGI.OIC5.03/10/2021",
-            "INEGI.OIC5.03/10/2021"
+            "INEGI.CIN3.05/6/2017",
+            "INEGI.CIN3.05/6/2017"
+        ]
+    },
+    {
+        "proveedor": "TEAM COMPETITIVE TENDERING, SOCIEDAD ANÓNIMA DE CAPITAL VARIABLE",
+        "numero": [
+            "INEGI.OIC5.03/6/2022",
+            "INEGI.OIC5.03/6/2022"
         ]
     }
-]Last update: 2026-02-12 04:53:21
+]Last update: 2026-02-13 04:49:38
