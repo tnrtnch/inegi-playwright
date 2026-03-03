@@ -735,13 +735,6 @@
         ]
     },
     {
-        "proveedor": "SOLUCIONES ABIERTAS Y CONSULTORIA, S.A. DE C.V.",
-        "numero": [
-            "SP-007/2009",
-            "SP-007/2009"
-        ]
-    },
-    {
         "proveedor": "SOLUCIONES CORPORATIVAS AMBIENTALES Y CONTRA INCENDIO, S.A. DE C.V.",
         "numero": [
             "INEGI.OIC5.03/9/2021",
@@ -767,13 +760,6 @@
         "numero": [
             "INEGI.OIC5.03/10/2023",
             "INEGI.OIC5.03/10/2023"
-        ]
-    },
-    {
-        "proveedor": "ST SOLUCIONES EMPRESARIALES, S.A. DE C.V.",
-        "numero": [
-            "INEGI.CIN3.05/10/2015",
-            "INEGI.CIN3.05/10/2015"
         ]
     },
     {
@@ -813,45 +799,6 @@
             "INEGI.CIN3.05/2/2016",
             "INEGI.CIN3.05/2/2017",
             "INEGI.CIN3.05/2/2017"
-        ]
-    },
-    {
-        "proveedor": "SUPER TAZ, S.A. DE C.V.",
-        "numero": [
-            "INEGI.CIN3.05/2/2016",
-            "INEGI.CIN3.05/2/2016",
-            "INEGI.CIN3.05/2/2017",
-            "INEGI.CIN3.05/2/2017"
-        ]
-    },
-    {
-        "proveedor": "SUPER TAZ, S.A. DE C.V.",
-        "numero": [
-            "INEGI.CIN3.05/2/2016",
-            "INEGI.CIN3.05/2/2016",
-            "INEGI.CIN3.05/2/2017",
-            "INEGI.CIN3.05/2/2017"
-        ]
-    },
-    {
-        "proveedor": "SUSST DHALCO, S.A. DE C.V.",
-        "numero": [
-            "INEGI.OIC5.03/13/2024",
-            "INEGI.OIC5.03/13/2024"
-        ]
-    },
-    {
-        "proveedor": "SUSST DHALCO, S.A. DE C.V.",
-        "numero": [
-            "INEGI.OIC5.03/13/2024",
-            "INEGI.OIC5.03/13/2024"
-        ]
-    },
-    {
-        "proveedor": "TAZ CLEANING, SA. DE C.V.",
-        "numero": [
-            "INEGI.CIN3.05/31/2016",
-            "INEGI.CIN3.05/31/2016"
         ]
     },
     {
@@ -915,4 +862,4 @@
             "INEGI.OIC5.03/8/2024"
         ]
     }
-]Last update: 2026-03-02 04:44:51
+]Last update: 2026-03-03 04:43:09
