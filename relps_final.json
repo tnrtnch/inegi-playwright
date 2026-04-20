@@ -798,67 +798,16 @@
         ]
     },
     {
-        "proveedor": "SUPER TAZ, S.A. DE C.V.",
-        "numero": [
-            "INEGI.CIN3.05/2/2016",
-            "INEGI.CIN3.05/2/2016",
-            "INEGI.CIN3.05/2/2017",
-            "INEGI.CIN3.05/2/2017"
-        ]
-    },
-    {
-        "proveedor": "SUPER TAZ, S.A. DE C.V.",
-        "numero": [
-            "INEGI.CIN3.05/2/2016",
-            "INEGI.CIN3.05/2/2016",
-            "INEGI.CIN3.05/2/2017",
-            "INEGI.CIN3.05/2/2017"
-        ]
-    },
-    {
-        "proveedor": "SUPER TAZ, S.A. DE C.V.",
-        "numero": [
-            "INEGI.CIN3.05/2/2016",
-            "INEGI.CIN3.05/2/2016",
-            "INEGI.CIN3.05/2/2017",
-            "INEGI.CIN3.05/2/2017"
-        ]
-    },
-    {
-        "proveedor": "SUPER TAZ, S.A. DE C.V.",
-        "numero": [
-            "INEGI.CIN3.05/2/2016",
-            "INEGI.CIN3.05/2/2016",
-            "INEGI.CIN3.05/2/2017",
-            "INEGI.CIN3.05/2/2017"
-        ]
-    },
-    {
-        "proveedor": "SUSST DHALCO, S.A. DE C.V.",
-        "numero": [
-            "INEGI.OIC5.03/13/2024",
-            "INEGI.OIC5.03/13/2024"
-        ]
-    },
-    {
-        "proveedor": "SUSST DHALCO, S.A. DE C.V.",
-        "numero": [
-            "INEGI.OIC5.03/13/2024",
-            "INEGI.OIC5.03/13/2024"
-        ]
-    },
-    {
-        "proveedor": "TAZ CLEANING, SA. DE C.V.",
-        "numero": [
-            "INEGI.CIN3.05/31/2016",
-            "INEGI.CIN3.05/31/2016"
-        ]
-    },
-    {
         "proveedor": "TEAM COMPETITIVE TENDERING, SOCIEDAD ANÓNIMA DE CAPITAL VARIABLE",
         "numero": [
             "INEGI.OIC5.03/6/2022",
             "INEGI.OIC5.03/6/2022"
+        ]
+    },
+    {
+        "proveedor": "TELECOMUNICACIONES Y TECNOLOGÍA EN LÍNEA, S.A. DE C.V.",
+        "numero": [
+            "40.902.05/005/2012"
         ]
     },
     {
@@ -887,5 +836,12 @@
             "INEGI.OIC5.03/8/2024",
             "INEGI.OIC5.03/8/2024"
         ]
+    },
+    {
+        "proveedor": "YUS & YUS, S.A. DE C.V.",
+        "numero": [
+            "INEGI.OIC5.03/8/2024",
+            "INEGI.OIC5.03/8/2024"
+        ]
     }
-]Last update: 2026-04-19 05:23:35
+]Last update: 2026-04-20 05:34:28
