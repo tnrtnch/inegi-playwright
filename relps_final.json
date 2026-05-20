@@ -889,6 +889,13 @@
         ]
     },
     {
+        "proveedor": "VALRO SERVICIOS INTEGRALES S.A. DE C.V.",
+        "numero": [
+            "INEGI.CIN3.05/3/2017",
+            "INEGI.CIN3.05/3/2017"
+        ]
+    },
+    {
         "proveedor": "Y & E INDUSTRY, S.A. DE C.V.",
         "numero": [
             "INEGI.OIC5.03/16/2019"
@@ -908,4 +915,4 @@
             "INEGI.OIC5.03/8/2024"
         ]
     }
-]Last update: 2026-05-19 06:43:11
+]Last update: 2026-05-20 06:43:13
