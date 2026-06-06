@@ -406,6 +406,12 @@
         ]
     },
     {
+        "proveedor": "ELEVADORES SICEM, S.A. DE C.V.",
+        "numero": [
+            "INEGI.OIC5.03/2/2026"
+        ]
+    },
+    {
         "proveedor": "EXPANSIÓN, S.A. DE C.V.",
         "numero": [
             "INEGI.OIC5.03/14/2024",
@@ -915,4 +921,4 @@
             "INEGI.OIC5.03/8/2024"
         ]
     }
-]Last update: 2026-06-05 07:01:06
+]Last update: 2026-06-06 06:23:37
