@@ -5,7 +5,7 @@ import traceback
 
 def clean(t):
     return " ".join(t.split())
- 
+  
 
 with sync_playwright() as p:
     browser = p.chromium.launch(headless=True)
