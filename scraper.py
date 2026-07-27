@@ -33,7 +33,6 @@ with sync_playwright() as p:
             "text=Ver total de proveedores sancionados"
         ).click()
 
-        relps.wait_for_selector("(//tbody)[5]")
 
         # get the lines
         rows = relps.locator(
@@ -49,20 +48,30 @@ with sync_playwright() as p:
 
 
 
+        # waiting table
+        relps.wait_for_selector("(//tbody)[5]")
+
+        for _ in range(20):
+            if rows.count() >= total - 1:
+                break
+            page.wait_for_timeout(500)
+
+        print(f"Rows restored: {rows.count()}/{total}")
+
+
         for i in range(total):
             rows = relps.locator(
                 "xpath=(//tbody)[5]/tr[position()>1]"
             )
 
-            current_rows = rows.count()
 
-            if i >= current_rows:
-                print(
-                    f"BREAK -> i={i}, rows={current_rows}, total={total}"
-                )
-                break
+            try:
+                row = rows.nth(i)
+                row.wait_for(state="visible", timeout=10000)
+            except:
+                print(f"Row {i+1} could not be restored")
+                continue
 
-            row = rows.nth(i)
             cols = row.locator("td")
 
             if cols.count() < 2:
@@ -130,6 +139,14 @@ with sync_playwright() as p:
             relps.wait_for_selector(
                 "(//tbody)[5]"
             )
+
+            for _ in range(20):
+                if rows.count() >= total - 1:
+                    break
+
+                page.wait_for_timeout(500)
+
+            print(f"Rows restored: {rows.count()}/{total}")
 
             print(f"END ITERATION {i+1}/{total}")
 
