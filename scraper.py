@@ -144,7 +144,7 @@ with sync_playwright() as p:
                 if rows.count() >= total - 1:
                     break
 
-                page.wait_for_timeout(500)
+                page.wait_for_timeout(500) 
 
             print(f"Rows restored: {rows.count()}/{total}")
 
