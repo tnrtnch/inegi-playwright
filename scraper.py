@@ -47,12 +47,19 @@ with sync_playwright() as p:
         i = -1
         proveedor = "UNKNOWN"
 
+
+
         for i in range(total):
             rows = relps.locator(
                 "xpath=(//tbody)[5]/tr[position()>1]"
             )
 
-            if i >= rows.count():
+            current_rows = rows.count()
+
+            if i >= current_rows:
+                print(
+                    f"BREAK -> i={i}, rows={current_rows}, total={total}"
+                )
                 break
 
             row = rows.nth(i)
