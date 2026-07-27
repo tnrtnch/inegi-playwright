@@ -51,6 +51,8 @@ with sync_playwright() as p:
         # waiting table
         relps.wait_for_selector("(//tbody)[5]")
 
+        rows = relps.locator("xpath=(//tbody)[5]/tr[position()>1]")
+
         for _ in range(20):
             if rows.count() >= total - 1:
                 break
