@@ -1,5 +1,6 @@
 from playwright.sync_api import sync_playwright
 import json
+import traceback
 
 
 def clean(t):
@@ -42,6 +43,9 @@ with sync_playwright() as p:
         print("Total rows:", total)
 
         merged = {}
+
+        i = -1
+        proveedor = "UNKNOWN"
 
         for i in range(total):
             rows = relps.locator(
@@ -119,6 +123,12 @@ with sync_playwright() as p:
             relps.wait_for_selector(
                 "(//tbody)[5]"
             )
+
+            print(f"END ITERATION {i+1}/{total}")
+
+        print("FOR LOOP FINISHED")
+
+
         cleaned_data = [
             {
                 "proveedor": proveedor,
@@ -138,6 +148,13 @@ with sync_playwright() as p:
 
         print(f"JSON records: {len(cleaned_data)}")
         print("\nFINISHED → relps_final.json")
+
+    except Exception as e:
+        print("=" * 80)
+        print(f"ERROR at row {i+1}/{total}")
+        print(f"Supplier: {proveedor}")
+        traceback.print_exc()
+        raise
 
     finally:
         browser.close()
