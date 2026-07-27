@@ -33,13 +33,18 @@ with sync_playwright() as p:
             "text=Ver total de proveedores sancionados"
         ).click()
 
+        relps.wait_for_selector("(//tbody)[5]")
 
-        # get the lines
-        rows = relps.locator(
-            "(//tbody)[5]//tr"
-        )
+        rows = relps.locator("xpath=(//tbody)[5]/tr[position()>1]")
+
+        for _ in range(20):
+            if rows.count() > 0:
+                break
+            page.wait_for_timeout(500)
+
         total = rows.count()
-        print("Total rows:", total)
+
+        print(f"Total rows: {total}")
 
         merged = {}
 
