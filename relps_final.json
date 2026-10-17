@@ -104,6 +104,12 @@
         ]
     },
     {
+        "proveedor": "AVETRONIC, S.A. DE C.V.",
+        "numero": [
+            "INEGI.OIC5.03/6/2026"
+        ]
+    },
+    {
         "proveedor": "BARRERA ASESORES TURÍSTICOS INTERNACIONALES, SOCIEDAD ANÓNIMA DE CAPITAL VARIABLE",
         "numero": [
             "INEGI.OIC5.03/13/2023"
@@ -477,4 +483,4 @@
             "INEGI.OIC5.03/8/2024"
         ]
     }
-]Last update: 2026-10-16 07:45:13
+]Last update: 2026-10-17 07:23:58
